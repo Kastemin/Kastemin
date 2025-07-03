@@ -82,18 +82,27 @@
   </div>
 
 <script>
-  function updatePadding() {
-    const bar = document.getElementById('barKeranjang');
-    const container = document.getElementById('kontainerDeskripsi');
+  const bar = document.getElementById('barKeranjang');
+  const container = document.querySelector('.deskripsi-container');
+  const btnCart = document.querySelector('.btn-cart');
+  const keranjangCount = document.getElementById('keranjangCount');
 
+  let jumlahKeranjang = 0;
+
+  function updatePadding() {
     if (bar && container) {
-      const barHeight = bar.getBoundingClientRect().height;
-      container.style.paddingBottom = `${barHeight + 12}px`;
+      const barHeight = bar.offsetHeight;
+      container.style.paddingBottom = `${barHeight + 10}px`;
     }
   }
 
-  window.addEventListener('DOMContentLoaded', updatePadding);
+  window.addEventListener('load', updatePadding);
   window.addEventListener('resize', updatePadding);
+
+  btnCart.addEventListener('click', () => {
+    jumlahKeranjang++;
+    keranjangCount.textContent = jumlahKeranjang;
+  });
 </script>
 
 </body>
