@@ -1,22 +1,33 @@
+/* === WARNA GLOBAL === */
+:root {
+  --warna-utama: #fb8500;
+  --warna-utama-hover: #e07b00;
+  --warna-teks: #222;
+  --warna-latar: #fffaf4;
+  --warna-promo: #ff3d00;
+  --warna-putih: #ffffff;
+  --warna-abu: #999;
+}
+
 /* === GLOBAL === */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fffaf4;
-  color: #222;
+  background: var(--warna-latar);
+  color: var(--warna-teks);
 }
 
 h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: #fb8500;
+  color: var(--warna-utama);
 }
 
 /* === NAVBAR === */
 .navbar {
-  background: #fb8500;
+  background: var(--warna-utama);
   padding: 1rem;
   position: sticky;
   top: 0;
@@ -37,7 +48,7 @@ h2 {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: var(--warna-putih);
 }
 
 .search-bar input {
@@ -57,7 +68,7 @@ h2 {
 .banner h1 {
   margin: 0;
   font-size: 2rem;
-  color: #fb8500;
+  color: var(--warna-utama);
 }
 
 .banner p {
@@ -81,7 +92,7 @@ h2 {
 }
 
 .produk-card {
-  background: #fff;
+  background: var(--warna-putih);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
@@ -107,8 +118,8 @@ h2 {
   position: absolute;
   top: 8px;
   left: 8px;
-  background: #fb8500;
-  color: white;
+  background: var(--warna-utama);
+  color: var(--warna-putih);
   padding: 2px 8px;
   font-size: 0.75rem;
   border-radius: 6px;
@@ -116,7 +127,7 @@ h2 {
 }
 
 .label.promo {
-  background: #ff3d00;
+  background: var(--warna-promo);
 }
 
 .produk-info {
@@ -130,7 +141,7 @@ h2 {
 
 .harga {
   font-weight: bold;
-  color: #222;
+  color: var(--warna-teks);
 }
 
 /* === CTA BUTTON === */
@@ -140,8 +151,8 @@ h2 {
 }
 
 .cta a {
-  background: #fb8500;
-  color: white;
+  background: var(--warna-utama);
+  color: var(--warna-putih);
   padding: 0.9rem 2rem;
   border-radius: 10px;
   text-decoration: none;
@@ -151,7 +162,7 @@ h2 {
 }
 
 .cta a:hover {
-  background: #e07b00;
+  background: var(--warna-utama-hover);
 }
 
 /* === FORM === */
@@ -167,7 +178,7 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
-  color: #999;
+  color: var(--warna-abu);
   background: #fefefe;
   margin-top: 4rem;
   border-top: 1px solid #eee;
@@ -179,7 +190,7 @@ footer {
   bottom: 20px;
   right: 20px;
   background: #25d366;
-  color: white;
+  color: var(--warna-putih);
   border-radius: 50%;
   width: 56px;
   height: 56px;
