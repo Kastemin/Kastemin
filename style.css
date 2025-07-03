@@ -316,3 +316,11 @@ a.kembali {
   background: var(--warna-utama);
   color: white;
 }
+
+/* === PERBAIKAN RESPONSIF TOMBOL BAWAH === */
+.btn-cart,
+.btn-request {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+}
