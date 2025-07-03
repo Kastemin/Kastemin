@@ -92,14 +92,14 @@ Yuk, mulai bikin custom korek versimu sekarang!
     const bar = document.getElementById('barKeranjang');
     const container = document.querySelector('.deskripsi-container');
 
-    function updatePadding() {
+  //  function updatePadding() {
       if (bar && container) {
         const barHeight = bar.offsetHeight;
         container.style.paddingBottom = `${barHeight + 60}px`; // Tambah ruang agar aman di semua layar
       }
     }
 
-    window.addEventListener('load', updatePadding);
+  //  window.addEventListener('load', updatePadding);
     window.addEventListener('resize', updatePadding);
   </script>
 
