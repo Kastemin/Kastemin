@@ -2,7 +2,7 @@
 
 h2 { margin-top: 2rem; margin-bottom: 1rem; text-align: center; color: #fb8500; }
 
-/* === NAVBAR === */ .navbar { background: #fb8500; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.1); } .navbar-container { max-width: 1024px; margin: auto; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 1.5rem; font-weight: bold; color: white; } .search-bar input { padding: 0.5rem; border-radius: 8px; border: none; width: 150px; }
+/* === NAVBAR === */ .navbar { background: #fb8500; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.1); } .navbar-container { max-width: 1024px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0 1rem; } .logo { font-size: 1.5rem; font-weight: bold; color: white; } .search-bar input { padding: 0.5rem; border-radius: 8px; border: none; width: 160px; }
 
 /* === BANNER / HERO === */ .banner { background: #ffe8c9; text-align: center; padding: 2rem 1rem; } .banner h1 { margin: 0; font-size: 2rem; color: #fb8500; } .banner p { font-size: 1rem; color: #444; margin-top: 0.5rem; }
 
