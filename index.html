@@ -1,1 +1,120 @@
 
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kastemin - Produk Custom Kamu</title>
+  <style>
+    /* Styling dasar untuk body dan layout */
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #222;
+    }/* Header section dengan warna mencolok */
+header {
+  background: #ffb703;
+  padding: 2rem;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Section umum */
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Galeri produk */
+.produk {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Kartu produk */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Tombol CTA */
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+.cta a {
+  background: #fb8500;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header Utama -->
+  <header>
+    <h1>Kastemin</h1>
+    <p>Custom-in produk kamu sendiri. Lilin, korek, atau ide baru? Semua bisa!</p>
+  </header>  <!-- Section Produk Custom -->  <section>
+    <h2>Produk Custom Favorit</h2>
+    <div class="produk"><!-- Kartu Produk: Lilin -->
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200.png?text=Lilin+Custom" alt="Lilin Custom">
+    <h3>Lilin Aromaterapi Custom</h3>
+    <p>Custom aroma, warna, stiker label, dan ukuran. Cocok untuk hadiah atau brand kamu sendiri.</p>
+  </div>
+
+  <!-- Kartu Produk: Korek -->
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200.png?text=Korek+Custom" alt="Korek Api Custom">
+    <h3>Korek Api Kayu Custom</h3>
+    <p>Desain stiker custom dengan nama, logo, atau pesan pribadi. Estetik dan eksklusif.</p>
+  </div>
+
+</div>
+
+<!-- Tombol ke Form Order -->
+<div class="cta">
+  <a href="#order">Pesan Sekarang</a>
+</div>
+
+  </section>  <!-- Section Form Order -->  <section id="order">
+    <h2>Form Order Custom</h2>
+    <p>Silakan isi form berikut untuk memulai proses kustomisasi:</p>
+    <!-- Form bisa diganti dengan Typeform / Tally embed -->
+    <iframe src="https://tally.so/r/m0xyzx" width="100%" height="500" frameborder="0" title="Form Kastemin"></iframe>
+  </section>  <!-- Footer Kontak -->  <footer>
+    &copy; 2025 Kastemin — Semua bisa kamu custom-in. Kontak: @kastemin.id
+  </footer>
+</body>
+</html>
