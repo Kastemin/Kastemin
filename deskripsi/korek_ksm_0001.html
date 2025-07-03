@@ -8,7 +8,7 @@
     .deskripsi-container {
       max-width: 600px;
       margin: 0 auto 2rem auto;
-      padding: 0 1rem 6rem 1rem;
+      padding: 0 1rem;
       box-sizing: border-box;
     }.gambar-produk {
   width: 100%;
@@ -112,11 +112,23 @@ a.kembali {
   <p>Wujudkan keistimewaan khusus buat promosi dan branding usaha kamu. Kastemin menyediakan korek kayu custom dengan desain label yang bisa kamu tentukan sendiri — cocok untuk souvenir, hampers, atau pelengkap produk lilin aromaterapi kamu.</p>
 </div>
 
-  </div>  <div class="add-to-cart-bar">
+  </div>  <div class="add-to-cart-bar" id="barKeranjang">
     <div class="chat-icon" title="Tanya Penjual">
       <i class="fas fa-comment-dots"></i>
     </div>
     <button class="btn-cart">🛒 Masukkan ke Keranjang</button>
-  </div>
-</body>
+  </div>  <script>
+    const bar = document.getElementById('barKeranjang');
+    const container = document.querySelector('.deskripsi-container');
+
+    function updatePadding() {
+      if (bar && container) {
+        const barHeight = bar.offsetHeight;
+        container.style.paddingBottom = `${barHeight + 20}px`;
+      }
+    }
+
+    window.addEventListener('load', updatePadding);
+    window.addEventListener('resize', updatePadding);
+  </script></body>
 </html>
