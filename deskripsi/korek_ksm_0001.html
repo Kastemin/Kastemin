@@ -48,22 +48,16 @@ a.kembali {
   bottom: -100px;
   left: 0;
   width: 100%;
-  background: #fb8500;
-  color: white;
+  background: #fff8f0;
+  color: #222;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   padding: 1rem;
-  font-weight: bold;
   font-size: 1rem;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
   transition: bottom 0.3s ease;
   z-index: 999;
-}
-
-.add-to-cart-bar span {
-  flex-grow: 1;
-  text-align: center;
 }
 
 .add-to-cart-bar.show {
@@ -73,14 +67,32 @@ a.kembali {
 .chat-icon {
   background: white;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fb8500;
   font-size: 18px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+
+.btn-cart {
+  background: #fb8500;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background 0.2s ease;
+}
+
+.btn-cart:hover {
+  background: #e27400;
 }
 
   </style>
@@ -107,7 +119,7 @@ a.kembali {
     <div class="chat-icon" title="Tanya Penjual">
       <i class="fas fa-comment-dots"></i>
     </div>
-    <span>Masukkan Keranjang</span>
+    <button class="btn-cart">🛒 Masukkan ke Keranjang</button>
   </div>  <script>
     const cartBar = document.getElementById('cartBar');
     let hasShown = false;
