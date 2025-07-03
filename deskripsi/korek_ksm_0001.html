@@ -10,6 +10,7 @@
 <body>
 
   <div class="deskripsi-container">
+    id="kontainerdeskripsi"
     <a href="../index.html" class="kembali">&larr; Kembali ke katalog</a>
     <img src="../images/korek/korek_custom_std.jpg" alt="Korek std" class="gambar-produk">
 
@@ -74,20 +75,20 @@
     <button class="btn-cart">Masukkan Keranjang</button>
   </div>
 
-  <script>
+<script>
+  function updatePadding() {
     const bar = document.getElementById('barKeranjang');
-    const container = document.querySelector('.deskripsi-container');
+    const container = document.getElementById('kontainerDeskripsi');
 
-    function updatePadding() {
-      if (bar && container) {
-        const barHeight = bar.offsetHeight;
-        container.style.paddingBottom = `${barHeight + 6}px`; // Jarak aman
-      }
+    if (bar && container) {
+      const barHeight = bar.getBoundingClientRect().height;
+      container.style.paddingBottom = `${barHeight + 12}px`;
     }
+  }
 
-    window.addEventListener('load', updatePadding);
-    window.addEventListener('resize', updatePadding);
-  </script>
+  window.addEventListener('DOMContentLoaded', updatePadding);
+  window.addEventListener('resize', updatePadding);
+</script>
 
 </body>
 </html>
