@@ -1,20 +1,193 @@
-/* === GLOBAL === */ body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fffaf4; color: #222; }
+/* === GLOBAL === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf4;
+  color: #222;
+}
 
-h2 { margin-top: 2rem; margin-bottom: 1rem; text-align: center; color: #fb8500; }
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fb8500;
+}
 
-/* === NAVBAR === */ .navbar { background: #fb8500; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.1); } .navbar-container { max-width: 1024px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0 1rem; } .logo { font-size: 1.5rem; font-weight: bold; color: white; } .search-bar input { padding: 0.5rem; border-radius: 8px; border: none; width: 160px; }
+/* === NAVBAR === */
+.navbar {
+  background: #fb8500;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-/* === BANNER / HERO === */ .banner { background: #ffe8c9; text-align: center; padding: 2rem 1rem; } .banner h1 { margin: 0; font-size: 2rem; color: #fb8500; } .banner p { font-size: 1rem; color: #444; margin-top: 0.5rem; }
+.navbar-container {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
 
-/* === PRODUK GRID === */ .produk-title { font-size: 1.4rem; } .produk-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1024px; margin: auto; padding: 1rem; }
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
 
-.produk-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: transform 0.2s ease; } .produk-card:hover { transform: translateY(-3px); } .produk-image { position: relative; } .produk-image img { width: 100%; display: block; } .label { position: absolute; top: 8px; left: 8px; background: #fb8500; color: white; padding: 2px 8px; font-size: 0.75rem; border-radius: 6px; } .label.promo { background: #ff3d00; } .produk-info { padding: 0.8rem; } .produk-info h3 { font-size: 1rem; margin: 0 0 4px; } .harga { font-weight: bold; color: #222; }
+.search-bar input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  width: 160px;
+}
 
-/* === CTA BUTTON === */ .cta { text-align: center; margin-top: 2rem; } .cta a { background: #fb8500; color: white; padding: 0.9rem 2rem; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 1rem; transition: background 0.2s ease; } .cta a:hover { background: #e07b00; }
+/* === BANNER / HERO === */
+.banner {
+  background: #ffe8c9;
+  text-align: center;
+  padding: 2rem 1rem;
+}
 
-/* === FORM === */ section#order p { font-size: 1rem; color: #333; text-align: center; margin-bottom: 1rem; }
+.banner h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #fb8500;
+}
 
-/* === FOOTER === */ footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #999; background: #fefefe; margin-top: 4rem; border-top: 1px solid #eee; }
+.banner p {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
 
-/* === WHATSAPP BUTTON === */ .wa-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; border-radius: 50%; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); text-decoration: none; z-index: 200; font-size: 24px; }
+/* === PRODUK GRID === */
+.produk-title {
+  font-size: 1.4rem;
+}
 
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1024px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.produk-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.produk-card:hover {
+  transform: translateY(-3px);
+}
+
+.produk-image {
+  position: relative;
+}
+
+.produk-image img {
+  width: 100%;
+  display: block;
+}
+
+.label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #fb8500;
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.label.promo {
+  background: #ff3d00;
+}
+
+.produk-info {
+  padding: 0.8rem;
+}
+
+.produk-info h3 {
+  font-size: 1rem;
+  margin: 0 0 4px;
+}
+
+.harga {
+  font-weight: bold;
+  color: #222;
+}
+
+/* === CTA BUTTON === */
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta a {
+  background: #fb8500;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.cta a:hover {
+  background: #e07b00;
+}
+
+/* === FORM === */
+section#order p {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #999;
+  background: #fefefe;
+  margin-top: 4rem;
+  border-top: 1px solid #eee;
+}
+
+/* === WHATSAPP BUTTON === */
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none;
+  z-index: 200;
+  font-size: 24px;
+}
