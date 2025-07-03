@@ -317,10 +317,41 @@ a.kembali {
   color: white;
 }
 
-/* === PERBAIKAN RESPONSIF TOMBOL BAWAH === */
+/* === PERBAIKAN TOMBOL KERANJANG & REQUEST === */
 .btn-cart,
 .btn-request {
   flex: 1 1 0;
   min-width: 0;
   max-width: 100%;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Warna tombol masing-masing */
+.btn-cart {
+  background: var(--warna-utama);
+  color: var(--warna-putih);
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.btn-cart:hover {
+  background: var(--warna-utama-hover);
+}
+
+.btn-request {
+  background: var(--warna-putih);
+  color: var(--warna-utama);
+  border: 2px solid var(--warna-utama);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-request:hover {
+  background: var(--warna-utama);
+  color: var(--warna-putih);
 }
