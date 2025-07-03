@@ -45,7 +45,7 @@ a.kembali {
 
 .add-to-cart-bar {
   position: fixed;
-  bottom: -100px;
+  bottom: 0;
   left: 0;
   width: 100%;
   background: #fff8f0;
@@ -56,13 +56,8 @@ a.kembali {
   padding: 0.8rem 1rem;
   font-size: 1rem;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
-  transition: bottom 0.3s ease;
   z-index: 999;
   gap: 0.5rem;
-}
-
-.add-to-cart-bar.show {
-  bottom: 0;
 }
 
 .chat-icon {
@@ -117,23 +112,11 @@ a.kembali {
   <p>Wujudkan keistimewaan khusus buat promosi dan branding usaha kamu. Kastemin menyediakan korek kayu custom dengan desain label yang bisa kamu tentukan sendiri — cocok untuk souvenir, hampers, atau pelengkap produk lilin aromaterapi kamu.</p>
 </div>
 
-  </div>  <div class="add-to-cart-bar" id="cartBar">
+  </div>  <div class="add-to-cart-bar">
     <div class="chat-icon" title="Tanya Penjual">
       <i class="fas fa-comment-dots"></i>
     </div>
     <button class="btn-cart">🛒 Masukkan ke Keranjang</button>
-  </div>  <script>
-    const cartBar = document.getElementById('cartBar');
-    let hasShown = false;
-
-    function showCartBar() {
-      if (!hasShown) {
-        cartBar.classList.add('show');
-        hasShown = true;
-      }
-    }
-
-    document.addEventListener('touchstart', showCartBar);
-    document.addEventListener('click', showCartBar);
-  </script></body>
+  </div>
+</body>
 </html>
