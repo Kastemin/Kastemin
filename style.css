@@ -1,74 +1,16 @@
-/* Styling dasar untuk body dan layout */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fdfdfd;
-  color: #222;
-}
+/* === GLOBAL STYLES === */ body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fffaf4; color: #222; }
 
-/* Header section dengan warna mencolok */
-header {
-  background: #ffb703;
-  padding: 2rem;
-  text-align: center;
-}
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-header p {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-}
+/* === HEADER === / header { background: #fb8500; / Amber/oranye khas Kastemin */ padding: 2rem; text-align: center; color: white; } header h1 { margin: 0; font-size: 2.8rem; } header p { margin-top: 0.5rem; font-size: 1.2rem; font-weight: 300; }
 
-/* Section umum */
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
+/* === SECTION UMUM === */ section { padding: 2rem; max-width: 1024px; margin: auto; }
 
-/* Galeri produk */
-.produk {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
+/* === PRODUK === */ .produk { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
 
-/* Kartu produk */
-.card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 1rem;
-  width: 300px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-.card img {
-  width: 100%;
-  border-radius: 8px;
-}
+/* === KARTU PRODUK === */ .card { background: #fff; border: none; border-radius: 16px; padding: 1rem; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease; } .card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); } .card img { width: 100%; border-radius: 12px; margin-bottom: 1rem; } .card h3 { margin: 0.5rem 0 0.3rem; font-size: 1.2rem; color: #fb8500; } .card p { font-size: 0.95rem; color: #444; line-height: 1.5; }
 
-/* Tombol CTA */
-.cta {
-  text-align: center;
-  margin-top: 2rem;
-}
-.cta a {
-  background: #fb8500;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
+/* === CTA BUTTON === */ .cta { text-align: center; margin-top: 2rem; } .cta a { background: #fb8500; color: white; padding: 0.9rem 2rem; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 1rem; transition: background 0.2s ease; } .cta a:hover { background: #e07b00; }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #777;
-}
+/* === FORM ORDER === */ section#order p { font-size: 1rem; color: #333; }
+
+/* === FOOTER === */ footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #999; background: #fefefe; margin-top: 4rem; border-top: 1px solid #eee; }
+
