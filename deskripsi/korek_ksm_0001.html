@@ -89,19 +89,19 @@ Yuk, mulai bikin custom korek versimu sekarang!
 </div>
 
   <script>
-    const bar = document.getElementById('barKeranjang');
-    const container = document.querySelector('.deskripsi-container');
+  const bar = document.getElementById('barKeranjang');
+  const container = document.querySelector('.produk-deskripsi');
 
-   //  function updatePadding() {
-   //   if (bar && container) {
-   //     const barHeight = bar.offsetHeight;
-   //    container.style.paddingBottom = `${barHeight + 60}px`; // Tambah ruang agar aman di semua layar
-   //   }
-   // } 
+  function updatePadding() {
+    if (bar && container) {
+      const barHeight = bar.offsetHeight;
+      container.style.paddingBottom = `${barHeight + 20}px`; // 20px buat jarak aman
+    }
+  }
 
-   //  window.addEventListener('load', updatePadding);
-   // window.addEventListener('resize', updatePadding);
-  </script>
+  window.addEventListener('load', updatePadding);
+  window.addEventListener('resize', updatePadding);
+</script>
 
 </body>
 </html>
