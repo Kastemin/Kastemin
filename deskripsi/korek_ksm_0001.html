@@ -51,7 +51,6 @@ a.kembali {
   background: #fb8500;
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
@@ -60,6 +59,11 @@ a.kembali {
   box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
   transition: bottom 0.3s ease;
   z-index: 999;
+}
+
+.add-to-cart-bar span {
+  flex-grow: 1;
+  text-align: center;
 }
 
 .add-to-cart-bar.show {
@@ -103,7 +107,7 @@ a.kembali {
     <div class="chat-icon" title="Tanya Penjual">
       <i class="fas fa-comment-dots"></i>
     </div>
-    Masukkan Keranjang
+    <span>🛒 Masukkan ke Keranjang</span>
   </div>  <script>
     const cartBar = document.getElementById('cartBar');
     let hasShown = false;
