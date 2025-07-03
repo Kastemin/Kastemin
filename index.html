@@ -3,44 +3,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kastemin - Produk Custom Kamu</title>
-  <!-- Memuat CSS eksternal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header Utama -->
-  <header>
-    <h1>Kastemin</h1>
-    <p>Custom-in produk kamu sendiri. Lilin, korek, atau ide baru? Semua bisa!</p>
-  </header>  <!-- Section Produk Custom -->  <section>
-    <h2>Produk Custom Favorit</h2>
-    <div class="produk"><!-- Kartu Produk: Lilin -->
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200.png?text=Lilin+Custom" alt="Lilin Custom">
-    <h3>Lilin Aromaterapi Custom</h3>
-    <p>Custom aroma, warna, stiker label, dan ukuran. Cocok untuk hadiah atau brand kamu sendiri.</p>
+  <!-- Navbar sederhana -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">Kastemin</div>
+    </div>
+  </nav>  <!-- Banner Kastemin -->  <header class="banner">
+    <h1>Custom Produk Kamu Sendiri</h1>
+    <p>Dari lilin, korek, hingga produk baru — semua bisa di-Kastemin!</p>
+  </header>  <!-- Grid Produk Unggulan -->  <section>
+    <h2 class="produk-title">Produk Unggulan</h2>
+    <div class="produk-grid"><div class="produk-card">
+    <div class="produk-image">
+      <img src="https://via.placeholder.com/200x200.png?text=Lilin+100g" alt="Lilin 100g">
+      <span class="label">Terlaris</span>
+    </div>
+    <div class="produk-info">
+      <h3>Lilin Aromaterapi 100g</h3>
+      <p class="harga">Rp25.000</p>
+    </div>
   </div>
 
-  <!-- Kartu Produk: Korek -->
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200.png?text=Korek+Custom" alt="Korek Api Custom">
-    <h3>Korek Api Kayu Custom</h3>
-    <p>Desain stiker custom dengan nama, logo, atau pesan pribadi. Estetik dan eksklusif.</p>
+  <div class="produk-card">
+    <div class="produk-image">
+      <img src="https://via.placeholder.com/200x200.png?text=Lilin+Mini" alt="Lilin Mini">
+    </div>
+    <div class="produk-info">
+      <h3>Lilin Mini Custom 35g</h3>
+      <p class="harga">Rp12.000</p>
+    </div>
+  </div>
+
+  <div class="produk-card">
+    <div class="produk-image">
+      <img src="https://via.placeholder.com/200x200.png?text=Korek+Custom" alt="Korek Custom">
+      <span class="label promo">Promo</span>
+    </div>
+    <div class="produk-info">
+      <h3>Korek Kayu Custom</h3>
+      <p class="harga">Rp5.000</p>
+    </div>
   </div>
 
 </div>
 
-<!-- Tombol ke Form Order -->
-<div class="cta">
-  <a href="#order">Pesan Sekarang</a>
-</div>
-
-  </section>  <!-- Section Form Order -->  <section id="order">
+  </section>  <!-- CTA Order -->  <section class="cta">
+    <a href="#order">Pesan Sekarang</a>
+  </section>  <!-- Form Order -->  <section id="order">
     <h2>Form Order Custom</h2>
-    <p>Silakan isi form berikut untuk memulai proses kustomisasi:</p>
-    <!-- Form bisa diganti dengan Typeform / Tally embed -->
+    <p>Isi form berikut untuk memulai custom produk kamu:</p>
     <iframe src="https://tally.so/r/m0xyzx" width="100%" height="500" frameborder="0" title="Form Kastemin"></iframe>
-  </section>  <!-- Footer Kontak -->  <footer>
-    &copy; 2025 Kastemin — Semua bisa kamu custom-in. Kontak: @kastemin.id
+  </section>  <!-- Footer -->  <footer>
+    &copy; 2025 Kastemin. Semua bisa kamu custom-in. Kontak: @kastemin.id
   </footer>
 </body>
 </html>
