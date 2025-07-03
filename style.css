@@ -9,6 +9,12 @@
   --warna-abu: #999;
 }
 
+/*normalisasi box*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* === GLOBAL === */
 body {
   font-family: 'Segoe UI', sans-serif;
