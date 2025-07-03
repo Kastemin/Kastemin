@@ -6,7 +6,7 @@ h2 { margin-top: 2rem; margin-bottom: 1rem; text-align: center; color: #fb8500; 
 
 /* === BANNER / HERO === */ .banner { background: #ffe8c9; text-align: center; padding: 2rem 1rem; } .banner h1 { margin: 0; font-size: 2rem; color: #fb8500; } .banner p { font-size: 1rem; color: #444; margin-top: 0.5rem; }
 
-/* === PRODUK GRID === */ .produk-title { font-size: 1.4rem; } .produk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; max-width: 1024px; margin: auto; padding: 1rem; }
+/* === PRODUK GRID === */ .produk-title { font-size: 1.4rem; } .produk-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1024px; margin: auto; padding: 1rem; }
 
 .produk-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: transform 0.2s ease; } .produk-card:hover { transform: translateY(-3px); } .produk-image { position: relative; } .produk-image img { width: 100%; display: block; } .label { position: absolute; top: 8px; left: 8px; background: #fb8500; color: white; padding: 2px 8px; font-size: 0.75rem; border-radius: 6px; } .label.promo { background: #ff3d00; } .produk-info { padding: 0.8rem; } .produk-info h3 { font-size: 1rem; margin: 0 0 4px; } .harga { font-weight: bold; color: #222; }
 
