@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,52 +8,58 @@
     .deskripsi-container {
       max-width: 600px;
       margin: 2rem auto;
-      text-align: center;
       padding: 0 1rem;
       box-sizing: border-box;
-    }
+    }.gambar-produk {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    .gambar-produk {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
+.produk-detail, .produk-deskripsi {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
 
-    .produk-detail {
-      font-size: 0.95rem;
-      color: #444;
-      margin-bottom: 1.5rem;
-    }
+.produk-detail h3, .produk-deskripsi h3 {
+  margin-bottom: 0.5rem;
+  color: #fb8500;
+  font-size: 1.1rem;
+}
 
-    a {
-      display: inline-block;
-      margin-top: 1.5rem;
-      color: #fb8500;
-      text-decoration: none;
-    }
+a.kembali {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #fb8500;
+  text-decoration: none;
+}
+
   </style>
-</head>
-
-<body>
-
+</head><body>
   <div class="deskripsi-container">
-    <a href="../index.html">&larr; Kembali ke katalog</a>
+    <a href="../index.html" class="kembali">&larr; Kembali ke katalog</a><img src="../images/korek/korek_custom_std.jpg" alt="Korek std" class="gambar-produk">
 
-    <img src="../images/korek/korek_custom_std.jpg" alt="Korek std" class="gambar-produk">
+<h2>Korek kayu custom standar</h2>
 
-    <h2>Korek kayu custom standar</h2>
+<div class="produk-detail">
+  <h3>Detail Produk</h3>
+  <p><strong>Harga:</strong> Rp3.500 / pcs</p>
+  <p><strong>Minimal order:</strong> 25 pcs</p>
+  <p><strong>Bahan:</strong> Kayu ringan + stiker label custom</p>
+</div>
 
-    <div class="produk-detail">
-      <p><strong>Harga:</strong> Rp3.500 / pcs</p>
-      <p><strong>Minimal order:</strong> 25 pcs</p>
-      <p><strong>Bahan:</strong> Kayu ringan + stiker label custom</p>
-    </div>
+<div class="produk-deskripsi">
+  <h3>Deskripsi</h3>
+  <p>Wujudkan keistimewaan khusus buat promosi dan branding usaha kamu. Kastemin menyediakan korek kayu custom dengan desain label yang bisa kamu tentukan sendiri — cocok untuk souvenir, hampers, atau pelengkap produk lilin aromaterapi kamu.</p>
+</div>
 
-    <p>Wujudkan keistimewaan khusus buat promosi dan branding usaha kamu. Kastemin menyediakan korek kayu custom dengan desain label yang bisa kamu tentukan sendiri — cocok untuk souvenir, hampers, atau pelengkap produk lilin aromaterapi kamu.</p>
   </div>
-
 </body>
 </html>
