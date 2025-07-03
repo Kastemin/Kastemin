@@ -1,16 +1,18 @@
-/* === GLOBAL STYLES === */ body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fffaf4; color: #222; }
+/* === GLOBAL === */ body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fffaf4; color: #222; }
 
-/* === HEADER === / header { background: #fb8500; / Amber/oranye khas Kastemin */ padding: 2rem; text-align: center; color: white; } header h1 { margin: 0; font-size: 2.8rem; } header p { margin-top: 0.5rem; font-size: 1.2rem; font-weight: 300; }
+h2 { margin-top: 2rem; margin-bottom: 1rem; text-align: center; color: #fb8500; }
 
-/* === SECTION UMUM === */ section { padding: 2rem; max-width: 1024px; margin: auto; }
+/* === NAVBAR === */ .navbar { background: #fb8500; padding: 1rem; position: sticky; top: 0; z-index: 100; } .navbar-container { max-width: 1024px; margin: auto; display: flex; align-items: center; } .logo { font-size: 1.5rem; font-weight: bold; color: white; }
 
-/* === PRODUK === */ .produk { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+/* === BANNER / HERO === */ .banner { background: #ffe8c9; text-align: center; padding: 2rem 1rem; } .banner h1 { margin: 0; font-size: 2rem; color: #fb8500; } .banner p { font-size: 1rem; color: #444; margin-top: 0.5rem; }
 
-/* === KARTU PRODUK === */ .card { background: #fff; border: none; border-radius: 16px; padding: 1rem; width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease; } .card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); } .card img { width: 100%; border-radius: 12px; margin-bottom: 1rem; } .card h3 { margin: 0.5rem 0 0.3rem; font-size: 1.2rem; color: #fb8500; } .card p { font-size: 0.95rem; color: #444; line-height: 1.5; }
+/* === PRODUK GRID === */ .produk-title { font-size: 1.4rem; } .produk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; max-width: 1024px; margin: auto; padding: 1rem; }
+
+.produk-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: transform 0.2s ease; } .produk-card:hover { transform: translateY(-3px); } .produk-image { position: relative; } .produk-image img { width: 100%; display: block; } .label { position: absolute; top: 8px; left: 8px; background: #fb8500; color: white; padding: 2px 8px; font-size: 0.75rem; border-radius: 6px; } .label.promo { background: #ff3d00; } .produk-info { padding: 0.8rem; } .produk-info h3 { font-size: 1rem; margin: 0 0 4px; } .harga { font-weight: bold; color: #222; }
 
 /* === CTA BUTTON === */ .cta { text-align: center; margin-top: 2rem; } .cta a { background: #fb8500; color: white; padding: 0.9rem 2rem; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 1rem; transition: background 0.2s ease; } .cta a:hover { background: #e07b00; }
 
-/* === FORM ORDER === */ section#order p { font-size: 1rem; color: #333; }
+/* === FORM === */ section#order p { font-size: 1rem; color: #333; text-align: center; margin-bottom: 1rem; }
 
 /* === FOOTER === */ footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #999; background: #fefefe; margin-top: 4rem; border-top: 1px solid #eee; }
 
