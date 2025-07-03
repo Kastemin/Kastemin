@@ -1,123 +1,41 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Korek kayu custom standar</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    .deskripsi-container {
-      max-width: 600px;
-      margin: 0 auto 2rem auto;
-      padding: 0 1rem;
-      box-sizing: border-box;
-    }.gambar-produk {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.produk-detail, .produk-deskripsi {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-
-.produk-detail h3, .produk-deskripsi h3 {
-  margin-bottom: 0.5rem;
-  color: #fb8500;
-  font-size: 1.1rem;
-}
-
-a.kembali {
-  display: inline-block;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #fb8500;
-  text-decoration: none;
-}
-
-.add-to-cart-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #fff8f0;
-  color: #222;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
-  z-index: 999;
-  gap: 0.5rem;
-}
-
-.chat-icon {
-  background: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fb8500;
-  font-size: 18px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  flex-shrink: 0;
-}
-
-.btn-cart {
-  background: #fb8500;
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: background 0.2s ease;
-  flex-grow: 1;
-}
-
-.btn-cart:hover {
-  background: #e27400;
-}
-
-  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head><body>
+</head>
+<body>
+
   <div class="deskripsi-container">
-    <a href="../index.html" class="kembali">&larr; Kembali ke katalog</a><img src="../images/korek/korek_custom_std.jpg" alt="Korek std" class="gambar-produk">
+    <a href="../index.html" class="kembali">&larr; Kembali ke katalog</a>
+    <img src="../images/korek/korek_custom_std.jpg" alt="Korek std" class="gambar-produk">
 
-<h2>Korek kayu custom standar</h2>
+    <h2>Korek kayu custom standar</h2>
 
-<div class="produk-detail">
-  <h3>Detail Produk</h3>
-  <p><strong>Harga:</strong> Rp3.500 / pcs</p>
-  <p><strong>Minimal order:</strong> 25 pcs</p>
-  <p><strong>Bahan:</strong> Kayu ringan + stiker label custom</p>
-</div>
+    <div class="produk-detail">
+      <h3>Detail Produk</h3>
+      <p><strong>Harga:</strong> Rp3.500 / pcs</p>
+      <p><strong>Minimal order:</strong> 25 pcs</p>
+      <p><strong>Bahan:</strong> Kayu ringan + stiker label custom</p>
+    </div>
 
-<div class="produk-deskripsi">
-  <h3>Deskripsi</h3>
-  <p>Wujudkan keistimewaan khusus buat promosi dan branding usaha kamu. Kastemin menyediakan korek kayu custom dengan desain label yang bisa kamu tentukan sendiri — cocok untuk souvenir, hampers, atau pelengkap produk lilin aromaterapi kamu.</p>
-</div>
+    <div class="produk-deskripsi">
+      <h3>Deskripsi</h3>
+      <p>Wujudkan keistimewaan khusus buat promosi dan branding usaha kamu. Kastemin menyediakan korek kayu custom dengan desain label yang bisa kamu tentukan sendiri — cocok untuk souvenir, hampers, atau pelengkap produk lilin aromaterapi kamu.</p>
+    </div>
+  </div>
 
-  </div>  <div class="add-to-cart-bar" id="barKeranjang">
+  <div class="add-to-cart-bar" id="barKeranjang">
     <div class="chat-icon" title="Tanya Penjual">
       <i class="fas fa-comment-dots"></i>
     </div>
     <button class="btn-cart">🛒 Masukkan ke Keranjang</button>
-  </div>  <script>
+  </div>
+
+  <script>
     const bar = document.getElementById('barKeranjang');
     const container = document.querySelector('.deskripsi-container');
 
@@ -130,5 +48,7 @@ a.kembali {
 
     window.addEventListener('load', updatePadding);
     window.addEventListener('resize', updatePadding);
-  </script></body>
+  </script>
+
+</body>
 </html>
