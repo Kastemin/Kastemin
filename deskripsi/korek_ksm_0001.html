@@ -7,8 +7,8 @@
   <style>
     .deskripsi-container {
       max-width: 600px;
-      margin: auto 2rem auto;
-      padding: 0;
+      margin: 0 auto 2rem auto;
+      padding: 0 1rem;
       box-sizing: border-box;
     }.gambar-produk {
   width: 100%;
@@ -43,6 +43,26 @@ a.kembali {
   text-decoration: none;
 }
 
+.add-to-cart-bar {
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  background: #fb8500;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+  transition: bottom 0.3s ease;
+  z-index: 999;
+}
+
+.add-to-cart-bar.show {
+  bottom: 0;
+}
+
   </style>
 </head><body>
   <div class="deskripsi-container">
@@ -62,6 +82,20 @@ a.kembali {
   <p>Wujudkan keistimewaan khusus buat promosi dan branding usaha kamu. Kastemin menyediakan korek kayu custom dengan desain label yang bisa kamu tentukan sendiri — cocok untuk souvenir, hampers, atau pelengkap produk lilin aromaterapi kamu.</p>
 </div>
 
-  </div>
-</body>
+  </div>  <div class="add-to-cart-bar" id="cartBar">
+    🛒 Masukkan ke Keranjang
+  </div>  <script>
+    const cartBar = document.getElementById('cartBar');
+    let hasShown = false;
+
+    function showCartBar() {
+      if (!hasShown) {
+        cartBar.classList.add('show');
+        hasShown = true;
+      }
+    }
+
+    document.addEventListener('touchstart', showCartBar);
+    document.addEventListener('click', showCartBar);
+  </script></body>
 </html>
