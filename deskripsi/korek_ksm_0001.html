@@ -83,7 +83,7 @@
 
 <script>
   const bar = document.getElementById('barKeranjang');
-  const container = document.querySelector('.deskripsi-container');
+  const container = document.getElementById('kontainerdeskripsi');
   const btnCart = document.querySelector('.btn-cart');
   const keranjangCount = document.getElementById('keranjangCount');
 
@@ -102,7 +102,7 @@
   btnCart.addEventListener('click', () => {
     jumlahKeranjang++;
     keranjangCount.textContent = jumlahKeranjang;
-    keranjangCount.style.display = 'inline-block'; // Biar muncul angkanya
+    keranjangCount.style.display = 'inline-block'; // Munculkan badge
   });
 </script>
 
